@@ -1,6 +1,6 @@
 package day44_polymorphism.employee;
 
-public abstract class Employee extends Person{
+public abstract class Employee extends Person implements CreateSmokeTest{
 
     String jobTitle;
     double salary;
@@ -11,8 +11,8 @@ public abstract class Employee extends Person{
         this.salary = salary;
     }
 
-    public abstract void work();
 
+    public abstract void work();
 
 
 

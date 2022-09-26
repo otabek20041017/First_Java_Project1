@@ -1,7 +1,6 @@
 package day01_orientation;
 
-public class
-Comments {
+public class Comments {
 
     // this is single line comment
     // System.out.println("Hello World"); --> this does not run, this is comment, just text

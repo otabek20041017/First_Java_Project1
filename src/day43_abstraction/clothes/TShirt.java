@@ -6,4 +6,6 @@ public class TShirt extends Clothes {
     public void wear() {
         System.out.println("Wearing tshirt");
     }
+
+
 }

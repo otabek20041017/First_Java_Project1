@@ -6,7 +6,7 @@ public class java {
     public static void main(String[] args) {
 
 
-            //DO NOT TOUCH BELOW
+        //DO NOT TOUCH BELOW
         Scanner s = new Scanner(System.in);
 
         int house = s.nextInt();
