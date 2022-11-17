@@ -20,11 +20,11 @@ Example:
         5
 
          */
-        int[] nums = {4,3,1,4,5,9,2,4,8,4,8,8,8,8,8};
+        int[] nums = {4, 3, 1, 4, 5, 9, 2, 4, 8, 4, 8, 8, 8, 8, 8};
         Arrays.sort(nums);
 
         System.out.println("Max number: " + nums[nums.length - 1]);
-       //System.out.println("Second Max: " + nums[nums.length - 2]); this doesn't work because 8 is duplicate, so it gives wrong second max
+        //System.out.println("Second Max: " + nums[nums.length - 2]); this doesn't work because 8 is duplicate, so it gives wrong second max
 
         int max = nums[nums.length - 1];
 
@@ -35,10 +35,6 @@ Example:
             }
 
         }
-
-
-
-
 
 
     }

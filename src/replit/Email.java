@@ -1,40 +1,31 @@
 package replit;
 
-import java.util.Scanner;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.Month;
+import java.time.Period;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class Email {
-    public static void main(String[] args) {
-        /*
-        Use String methods to divide the given email into separate parts. The email will always be in this format:
-firstName_lastName@domain.com
 
-Pull apart and print the first name, last name, and domain. When printing the values all three should be in proper capitalization format - The first letter of each word is uppercase and the rest are lowercase. Output in the following format:
+    public static void main(String... args) {
+        LocalDate start = LocalDate.of(2015, Month.JANUARY, 1);
+        LocalDate end = LocalDate.of(2015, Month.MARCH, 30);
+        Period period = Period.ofMonths(1); // create a period
+        performAnimalEnrichment(start, end, period);
+    }
 
-First name: $first name
-Last name: $last name
-Domain: $domain
-
-Hint: Think about how to use substring and indexOf together
-
-Main topics: String manipulation, Scanner, methods, primitive datatypes, concatenation
-         */
-        /*
-        Ex:
-  Input:
-    sergey_brin@gmail.com
-
-  Output:
-    First name: Sergey
-    Last name: Brin
-    Domain: Gmail
-         */
-
-        Scanner input = new Scanner(System.in);
-        String email = input.nextLine();
-        String firstName = email.substring(0).toUpperCase().substring(0, 6);
-        String lastName = email.substring(7, 11).toUpperCase();
-        String domain = email.substring(12, 17).toUpperCase();
-        System.out.println("First Name: " + firstName + "\nLast Name: " + lastName + "\nDomain: " + domain);
-
+    private static void performAnimalEnrichment(LocalDate start, LocalDate end,
+                                                Period period) { // uses the generic period
+        LocalDate upTo = start;
+        while (upTo.isBefore(end)) {
+            System.out.println("give new toy: " + upTo);
+            upTo = upTo.plus(period); // adds the period
+        }
     }
 }
+
+
